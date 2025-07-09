@@ -17,6 +17,9 @@ section.head-contacts {
 .head-contact {
 padding: .5em;
 }
+.head-contact a {
+  color: $secondary-color;
+}
 
 .header-base {
   display: flex;
@@ -75,7 +78,7 @@ transform: scale(1.05);
   padding: .5em 0;
   font-family: 'Berkeley Std', serif;
   font-size: 1.4rem;
-  color: $foreground-color;
+  color: $secondary-color;
 
 }
 
@@ -134,7 +137,7 @@ transform: scale(1.05);
   flex-direction: column;
   justify-content: center;
   display: flex;
-  color: $foreground-color;
+  color: $secondary-color;
   text-align: right;
  }
   
