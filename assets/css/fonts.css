@@ -12,7 +12,7 @@
     font-style: normal;
   }
   
-  // Optional: Load other Vacer weights
+
   @font-face {
     font-family: 'Vacer Sans';
     src: url({{ '/assets/fonts/vacer_sans/VacerSansBoldPersonal.ttf' | relative_url }}) format('truetype');
