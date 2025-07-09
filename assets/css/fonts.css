@@ -1,0 +1,116 @@
+@font-face {
+    font-family: 'Americana Std Roman';
+    src: url({{ '/assets/fonts/AmericanaStdRoman/Americana Std Roman.otf' | relative_url }}) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Vacer Sans';
+    src: url({{ '/assets/fonts/vacer_sans/VacerSansRegularPersonal.ttf' | relative_url }}) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  // Optional: Load other Vacer weights
+  @font-face {
+    font-family: 'Vacer Sans';
+    src: url({{ '/assets/fonts/vacer_sans/VacerSansBoldPersonal.ttf' | relative_url }}) format('truetype');
+    font-weight: bold;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Vacer Sans';
+    src: url({{ '/assets/fonts/vacer_sans/VacerSansLightPersonal.ttf' | relative_url }}) format('truetype');
+    font-weight: lighter;
+    font-style: normal;
+  }
+  
+  .playfair-display-400 {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Berkeley Std';
+    src: url({{ '/assets/fonts/berkeley/BerkeleyStd-Book.woff2' | relative_url }}) format('woff2'),
+         url({{ '/assets/fonts/berkeley/BerkeleyStd-Book.woff' | relative_url }}) format('woff'),
+         url({{ '/assets/fonts/berkeley/BerkeleyStd-Book.ttf' | relative_url }}) format('truetype'),
+         url({{ '/assets/fonts/berkeley/BerkeleyStd-Book.eot' | relative_url }}) format('embedded-opentype');
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Berkeley Std';
+    src: url({{ '/assets/fonts/berkeley/BerkeleyStd-BookItalic.woff2' | relative_url }}) format('woff2'),
+         url({{ '/assets/fonts/berkeley/BerkeleyStd-BookItalic.woff' | relative_url }}) format('woff'),
+         url({{ '/assets/fonts/berkeley/BerkeleyStd-BookItalic.ttf' | relative_url }}) format('truetype'),
+         url({{ '/assets/fonts/berkeley/BerkeleyStd-BookItalic.eot' | relative_url }}) format('embedded-opentype');
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'Berkeley Std';
+    src: url({{ '/assets/fonts/berkeley/BerkeleyStd-Medium.woff2' | relative_url }}) format('woff2'),
+         url({{ '/assets/fonts/berkeley/BerkeleyStd-Medium.woff' | relative_url }}) format('woff'),
+         url({{ '/assets/fonts/berkeley/BerkeleyStd-Medium.ttf' | relative_url }}) format('truetype'),
+         url({{ '/assets/fonts/berkeley/BerkeleyStd-Medium.eot' | relative_url }}) format('embedded-opentype');
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Berkeley Std';
+    src: url({{ '/assets/fonts/berkeley/BerkeleyStd-Italic.woff2' | relative_url }}) format('woff2'),
+         url({{ '/assets/fonts/berkeley/BerkeleyStd-Italic.woff' | relative_url }}) format('woff'),
+         url({{ '/assets/fonts/berkeley/BerkeleyStd-Italic.ttf' | relative_url }}) format('truetype'),
+         url({{ '/assets/fonts/berkeley/BerkeleyStd-Italic.eot' | relative_url }}) format('embedded-opentype');
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'Berkeley Std';
+    src: url({{ '/assets/fonts/berkeley/BerkeleyStd-Bold.woff2' | relative_url }}) format('woff2'),
+         url({{ '/assets/fonts/berkeley/BerkeleyStd-Bold.woff' | relative_url }}) format('woff'),
+         url({{ '/assets/fonts/berkeley/BerkeleyStd-Bold.ttf' | relative_url }}) format('truetype'),
+         url({{ '/assets/fonts/berkeley/BerkeleyStd-Bold.eot' | relative_url }}) format('embedded-opentype');
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Berkeley Std';
+    src: url({{ '/assets/fonts/berkeley/BerkeleyStd-BoldItalic.woff2' | relative_url }}) format('woff2'),
+         url({{ '/assets/fonts/berkeley/BerkeleyStd-BoldItalic.woff' | relative_url }}) format('woff'),
+         url({{ '/assets/fonts/berkeley/BerkeleyStd-BoldItalic.ttf' | relative_url }}) format('truetype'),
+         url({{ '/assets/fonts/berkeley/BerkeleyStd-BoldItalic.eot' | relative_url }}) format('embedded-opentype');
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'Berkeley Std';
+    src: url({{ '/assets/fonts/berkeley/BerkeleyStd-Black.woff2' | relative_url }}) format('woff2'),
+         url({{ '/assets/fonts/berkeley/BerkeleyStd-Black.woff' | relative_url }}) format('woff'),
+         url({{ '/assets/fonts/berkeley/BerkeleyStd-Black.ttf' | relative_url }}) format('truetype'),
+         url({{ '/assets/fonts/berkeley/BerkeleyStd-Black.eot' | relative_url }}) format('embedded-opentype');
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Berkeley Std';
+    src: url({{ '/assets/fonts/berkeley/BerkeleyStd-BlackItalic.woff2' | relative_url }}) format('woff2'),
+         url({{ '/assets/fonts/berkeley/BerkeleyStd-BlackItalic.woff' | relative_url }}) format('woff'),
+         url({{ '/assets/fonts/berkeley/BerkeleyStd-BlackItalic.ttf' | relative_url }}) format('truetype'),
+         url({{ '/assets/fonts/berkeley/BerkeleyStd-BlackItalic.eot' | relative_url }}) format('embedded-opentype');
+    font-weight: 900;
+    font-style: italic;
+  }
+  
