@@ -1,6 +1,6 @@
 - title: New Construction
   slug: new-construction
-  image: /assets/images/10.jpg
+  image: /assets/images/10.jpg/
   description: >
     We specialize in custom home builds from the ground up, tailored to your lifestyle and the unique character of western North Carolina. From planning and permitting to final finishes, we guide you through the process with clarity and craftsmanship.
   offerings:
@@ -10,7 +10,7 @@
 
 - title: Home Remodel
   slug: home-remodel
-  image: /assets/images/9.jpg
+  image: /assets/images/9.jpg/
   description: >
     Transform your existing space into the home you’ve always wanted. Whether it’s an addition, structural update, or whole-home redesign, we deliver thoughtful renovations that blend seamlessly with your home’s original character.
   offerings:
