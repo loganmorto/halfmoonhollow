@@ -1,0 +1,55 @@
+@use "variables" as *;  // Directly load variables
+
+.services-sections {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: $card-color;
+    border-radius: $radius;
+    margin: 1em 0;
+    box-shadow: $box-shadow-half;
+}
+
+.services-container {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5em;
+    padding: 1em;
+}
+
+.services-sections h2 {
+    font-size: 2.5em;
+    font-family: $font-accent;
+    text-align: center;
+    padding: .5em 0 0 0;
+}
+.services-sections img {
+    border-radius: $radius;
+    border: 1px solid $foreground-color;
+    object-fit: cover;
+}
+
+.services-section {
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+    align-items: center;
+}
+
+.divider {
+    width: 95%; 
+    height:1px; 
+    background-color:black;    
+}
+
+@media (min-width: 768px) {
+    .services-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .services-section img {
+        aspect-ratio: 2 / 1.4;
+    }
+}

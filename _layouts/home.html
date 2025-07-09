@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }} | {{ site.title }}</title>
+    <link
+      rel="icon"
+      href="/assets/images/favicon.svg"
+      type="image/svg+xml">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
+      <!-- Styles -->
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+    <!-- Nav JS -->
+    <script src="{{ '/assets/js/navigation.js' | relative_url }}"></script>
+    <script src="{{ '/assets/js/header.js' | relative_url }}"></script>
+
+
+  </head>
+  <div class="menu-overlay"></div>
+  <body>
+    {{ content }}
+    <p style="text-align: center;" class="facebook-banner">Check out our
+      <a style="text-decoration:underline;" href="https://www.facebook.com/westerncarolinawaterscapes/">Facebook</a>
+      page for updates and photos of our work!</p>
+    {% include header.html %}
+
+    <main style="grid-column: 1 / 5; max-width: 1200px; margin: 0 auto; ">
+
+      {% include services.html %}
+      {% include about.html %}
+      {% include brands.html %}
+      {% include service-regions.html %}
+      {% include gallery.html data="mini-gallery" %}
+      {% include recent-posts.html %}
+      {% include contact.html %}
+
+
+    </main>
+
+    {% include footer.html %}
+
+
+  </body>
+</html>

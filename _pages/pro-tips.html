@@ -1,0 +1,29 @@
+---
+layout: page
+title: Pro Tips
+subheading: We've put together some information we think might help!
+---
+
+<section class="blog-index">
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li class="post-preview">
+        <a href="{{ post.url }}">
+          {% if post.image %}
+            <div class="post-title-image" style="background-image: url('{{ post.image }}');">
+              <h2 class="overlay-title">{{ post.title }}</h2>
+            </div>
+          {% else %}
+            <h2>
+              <a href="{{ post.url }}">{{ post.title }}</a>
+            </h2>
+          {% endif %}
+          <div class="excerpt-content">
+            <p>{{ post.excerpt | strip_html | truncate: 120 }}</p>
+            <small>{{ post.date | date: "%B %d, %Y" }}</small>
+          </div>
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+</section>

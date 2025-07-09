@@ -1,0 +1,22 @@
+.blog-post img {
+    width: 100%;
+    border-radius: $radius;
+    border: $border;
+    box-shadow: $box-shadow-half;
+}
+
+.blog-post {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.post-body {
+    display: flex;
+    flex-direction: column;
+    gap: .6em;
+}
+
+.post-body ul {
+    margin-left: 1em;
+}

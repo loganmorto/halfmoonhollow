@@ -1,0 +1,52 @@
+// _sass/_variables-dark.scss
+
+// Dark Theme Color Palette
+
+$background-color: hsl(210, 15%, 10%);  /* Deep Charcoal Blue */
+$background-color-frosted: hsla(210, 15%, 10%, 0.7);  /* Frosted background */
+
+$foreground-color: hsl(0, 0%, 90%); // Light Grey Text
+$foreground-color-half: hsla(0, 0%, 90%, 0.5);
+$foreground-color-quarter: hsla(0, 0%, 90%, 0.25);
+
+$card-color: hsl(210, 15%, 15%); // Slightly lighter than background for cards
+$card-foreground-color: hsl(0, 0%, 95%); // Light Text
+
+$popover-color: hsl(210, 15%, 15%);
+$popover-foreground-color: hsl(0, 0%, 95%);
+
+$primary-color: hsl(78, 39%, 55%); // 🍃 Fresh Construction Green (#A1BA5E)
+$primary-foreground-color: hsl(0, 0%, 0%); // Black text on green buttons
+
+$secondary-color: hsl(33, 36%, 55%); // 🧱 Clay Tan
+$secondary-foreground-color: hsl(0, 0%, 0%); // Black text
+
+$muted-color: hsl(210, 15%, 25%); // Muted Slate Background
+$muted-foreground-color: hsl(0, 0%, 80%); // Light Grey
+
+$accent-color: hsl(210, 14%, 97%); // 🧵 Softer Steel Blue
+$accent-foreground-color: hsl(0, 0%, 10%); // Very Dark Text
+
+$destructive-color: hsl(0, 70%, 55%); // 🔴 Softer Red
+$destructive-foreground-color: hsl(0, 0%, 100%); // White
+
+$border-color: hsl(210, 10%, 35%); // Low-contrast slate border
+$input-color: hsl(210, 10%, 30%);
+$ring-color: hsl(78, 39%, 55%); // Green ring to match primary
+
+$radius: 0.5rem;
+
+// Chart Colors
+$chart-1: hsl(78, 39%, 55%); // Green
+$chart-2: hsl(33, 36%, 55%); // Clay Tan
+$chart-3: hsl(210, 45%, 60%); // Blue Accent
+$chart-4: hsl(43, 90%, 70%); // Gold Highlight
+$chart-5: hsl(0, 0%, 60%);   // Neutral Mid Grey
+
+// Fonts
+$font-primary: 'Work Sans', sans-serif;
+$font-accent: 'Berkeley Std', serif;
+
+$border: 2px solid $card-color;
+$box-shadow-half: 0 4px 12px $foreground-color-half;
+$box-shadow-quarter: 0 4px 12px $foreground-color-quarter;

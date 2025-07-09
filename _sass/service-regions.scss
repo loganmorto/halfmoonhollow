@@ -1,0 +1,56 @@
+.service-regions *{
+    text-align: center;
+}
+
+.service-regions ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem 1rem;
+    padding: 0 1em;
+    font-size: .9em;
+    margin: 1rem 0;
+  }
+  
+  .service-regions ul li {
+    position: relative;
+    padding-left: .7em;
+    line-height: 1.4; /* Helps with vertical centering visually */
+  }
+  
+  .service-regions ul li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: currentColor;
+  }
+
+  .map {
+    border: $border;
+    border-radius: $radius;
+    box-shadow: $box-shadow-half;
+    margin-bottom: .8em;
+  }
+
+  @media (min-width: 768px) {
+
+    .service-regions ul {
+      font-size: 1em;
+    }
+
+    .service-regions > p {
+      font-size: 1em !important; 
+    }
+
+    .service-regions > *:not(h2) {
+      margin: 1em 0 !important;
+    }
+    
+    
+  }
+
+  

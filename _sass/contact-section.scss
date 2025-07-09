@@ -1,0 +1,92 @@
+.contact-section {
+
+    color: $card-foreground-color;
+    text-align: center;
+    
+    width: fit-content;
+    justify-self: center;
+  }
+  
+  .contact-section .section-header {
+    padding-bottom: 0;
+  }
+  
+  .contact-section a {
+    font-weight: bold;
+  }
+  
+  .contact-section img {
+    width: 100%;
+    aspect-ratio: 2 / 1.4;
+    object-fit: cover;
+    border-radius: $radius $radius 0 0 ;
+    
+    max-height: 400px;
+    max-width: 600px;
+    justify-self: center;
+  }
+  
+  .contact-section-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 1.5em;
+    border: $border;
+    border-radius: $radius;
+    background-color: $card-color;
+    box-shadow: $box-shadow-half;
+    overflow: hidden;
+  }
+
+  .contact-section>p {
+    padding: 0 .5em;
+  }
+  
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1em;
+
+  }
+  
+  .contact-label {
+    text-decoration: underline;
+    padding-bottom: 0.2em;
+  }
+  
+  .contact-hours {
+    font-weight: bold;
+  }
+  
+  @media (min-width: 768px) {
+    .contact-section-wrapper {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 1em;
+      align-items: center;
+      text-align: left;
+      padding: 1em;
+    }
+
+    .contact-section {
+        margin: 2em 0;
+        padding: 0 1em;
+    }
+  
+    .contact-info {
+      align-items: start;
+      text-align: left;
+      margin-bottom: 0;
+    }
+  
+    .contact-section img {
+      width: calc(100% - 8px);
+      height: calc(100% - 8px);
+      box-shadow: $box-shadow-half;
+      border: $border;
+      border-radius: $radius;
+    }
+  }
+  

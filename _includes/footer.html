@@ -1,0 +1,47 @@
+<footer style="grid-column: 1 / 5; padding-top: 1em;">
+  <div class="footer-container">
+    <div class="footer-nav">
+      <a class="logo" href="{{ '/' | relative_url }}">
+        <img src="/assets/images/logo.svg" alt="">
+      </a>
+
+      {% include navigation.html %}
+    </div>
+    <div class="footer-sidebar">
+      <div class="hours">
+        <p style="font-weight: bold; font-size:1.2rem;">Hours</p>
+        <div class="hours-container">
+          <p>
+            {{ site.business.hours }}
+          </p>
+          <p>Mon - Fri</p>
+        </div>
+      </div>
+      <div class="contact">
+        <p style="font-weight: bold; font-size:1.2rem;">Contact</p>
+        <div class="footer-contacts">
+          <div class="footer-contact-link">
+            <a href="mailto:{{ site.business.email }}">
+              {{ site.business.email }}</a>
+          </div>
+          <div class="footer-contact-link">
+            <a href="tel:{{ site.business.phone }}">
+              <img src="{{ '/assets/images/phone-black.svg' | relative_url }}" alt="phone icon"> {{ site.business.phone }}
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="text-align: center; font-size:smaller;">
+    <a href="{{  '/privacy-policy/' | relative_url }} ">Privacy Policy</a>
+    <a href="{{'/cookies/' | relative_url}}">Cookies</a>
+    <p>Copyright © 2025 Western Carolina Waterscapes LLC  - All Rights Reserved.</p>
+  </div>
+  <script type="text/javascript" src="/assets/js/lightbox.js"></script>
+
+
+  {% if page.layout == "home" or page.layout == "default" %}
+    <script src="{{ '/assets/js/hero-text.js' | relative_url }}"></script>
+  {% endif %}
+</footer>

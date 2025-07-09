@@ -1,0 +1,104 @@
+@font-face {
+    font-family: 'ITC Berkeley Oldstyle Std';
+    src: url('BerkeleyStd-BlackItalic.eot');
+    src: local('ITC Berkeley Oldstyle Std Black Italic'), local('BerkeleyStd-BlackItalic'),
+        url('BerkeleyStd-BlackItalic.eot?#iefix') format('embedded-opentype'),
+        url('BerkeleyStd-BlackItalic.woff2') format('woff2'),
+        url('BerkeleyStd-BlackItalic.woff') format('woff'),
+        url('BerkeleyStd-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ITC Berkeley Oldstyle Std';
+    src: url('BerkeleyStd-Italic.eot');
+    src: local('ITC Berkeley Oldstyle Std Italic'), local('BerkeleyStd-Italic'),
+        url('BerkeleyStd-Italic.eot?#iefix') format('embedded-opentype'),
+        url('BerkeleyStd-Italic.woff2') format('woff2'),
+        url('BerkeleyStd-Italic.woff') format('woff'),
+        url('BerkeleyStd-Italic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ITC Berkeley Oldstyle Std';
+    src: url('BerkeleyStd-Medium.eot');
+    src: local('ITC Berkeley Oldstyle Std Medium'), local('BerkeleyStd-Medium'),
+        url('BerkeleyStd-Medium.eot?#iefix') format('embedded-opentype'),
+        url('BerkeleyStd-Medium.woff2') format('woff2'),
+        url('BerkeleyStd-Medium.woff') format('woff'),
+        url('BerkeleyStd-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ITC Berkeley Oldstyle Std';
+    src: url('BerkeleyStd-BookItalic.eot');
+    src: local('ITC Berkeley Oldstyle Std Book Italic'), local('BerkeleyStd-BookItalic'),
+        url('BerkeleyStd-BookItalic.eot?#iefix') format('embedded-opentype'),
+        url('BerkeleyStd-BookItalic.woff2') format('woff2'),
+        url('BerkeleyStd-BookItalic.woff') format('woff'),
+        url('BerkeleyStd-BookItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ITC Berkeley Oldstyle Std';
+    src: url('BerkeleyStd-Black.eot');
+    src: local('ITC Berkeley Oldstyle Std Black'), local('BerkeleyStd-Black'),
+        url('BerkeleyStd-Black.eot?#iefix') format('embedded-opentype'),
+        url('BerkeleyStd-Black.woff2') format('woff2'),
+        url('BerkeleyStd-Black.woff') format('woff'),
+        url('BerkeleyStd-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ITC Berkeley Oldstyle Std';
+    src: url('BerkeleyStd-Bold.eot');
+    src: local('ITC Berkeley Oldstyle Std Bold'), local('BerkeleyStd-Bold'),
+        url('BerkeleyStd-Bold.eot?#iefix') format('embedded-opentype'),
+        url('BerkeleyStd-Bold.woff2') format('woff2'),
+        url('BerkeleyStd-Bold.woff') format('woff'),
+        url('BerkeleyStd-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ITC Berkeley Oldstyle Std';
+    src: url('BerkeleyStd-Book.eot');
+    src: local('ITC Berkeley Oldstyle Std Book'), local('BerkeleyStd-Book'),
+        url('BerkeleyStd-Book.eot?#iefix') format('embedded-opentype'),
+        url('BerkeleyStd-Book.woff2') format('woff2'),
+        url('BerkeleyStd-Book.woff') format('woff'),
+        url('BerkeleyStd-Book.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ITC Berkeley Oldstyle Std';
+    src: url('BerkeleyStd-BoldItalic.eot');
+    src: local('ITC Berkeley Oldstyle Std Bold Italic'), local('BerkeleyStd-BoldItalic'),
+        url('BerkeleyStd-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('BerkeleyStd-BoldItalic.woff2') format('woff2'),
+        url('BerkeleyStd-BoldItalic.woff') format('woff'),
+        url('BerkeleyStd-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+

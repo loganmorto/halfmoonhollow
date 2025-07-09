@@ -1,0 +1,37 @@
+---
+layout: page
+title: Our Services
+subheading: From New Construction to Kitchen Remodels, Half Moon Hollow is the crew for the job
+---
+
+<section class="services">
+
+
+  {% for service in site.data.services %}
+    <div class="service">
+      <div class="service-card">
+        <img
+          src="{{ service.image }}"
+          alt="{{ service.title }} image"
+          loading="lazy">
+        <div class="service-card-content">
+          <h2 class="section-header" style="font-size: 2em; padding: 0;">{{ service.title }}</h2>
+          <p>{{ service.description }}</p>
+
+          {% if service.offerings %}
+            <ul>
+              {% for item in service.offerings %}
+                <li>{{ item }}</li>
+              {% endfor %}
+            </ul>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+  <div class="cta-hero-wrapper" style="display: flex; justify-content:center; margin: 2em 0;">
+    {% include cta.html %}
+    {% include cta-alt.html %}
+  </div>
+
+</section>

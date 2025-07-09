@@ -1,0 +1,51 @@
+{% if page.layout == "contact" %}
+  <section class="contact-section">
+    <div class="contact-section-wrapper">
+      <img src="/assets/images/contact-image.jpg" alt="A close up picture of a Koi fish in a container">
+      <div class="contact-info">
+        <div>
+          <p class="contact-label">Phone</p>
+          <a href="tel:{{ site.business.phone }}">{{ site.business.phone }}</a>
+        </div>
+        <div>
+          <p class="contact-label">Email</p>
+          <a href="mailto:wcwaterscapes@gmail.com">{{ site.business.email }}</a>
+        </div>
+        <div>
+          <p class="contact-label">Hours</p>
+          <p class="contact-hours">{{ site.business.hours }}</p>
+        </div>
+        <div>
+          <p class="contact-label">Address</p>
+          <a href="https://maps.app.goo.gl/1m63c49zTmR75ibcA">{{ site.business.address }}</a>
+        </div>
+      </div>
+    </div>
+  </section>
+{% else %}
+  <section class="contact-section">
+    <h2 class="section-header">Contact Us!</h2>
+    <p>Let's work together to make something special</p>
+    <div class="contact-section-wrapper">
+      <img src="/assets/images/contact-image.jpg" alt="A close up picture of a Koi fish in a container">
+      <div class="contact-info">
+        <div>
+          <p class="contact-label">Phone</p>
+          <a href="tel:{{ site.business.phone }}">{{ site.business.phone }}</a>
+        </div>
+        <div>
+          <p class="contact-label">Email</p>
+          <a href="mailto:wcwaterscapes@gmail.com">{{ site.business.email }}</a>
+        </div>
+        <div>
+          <p class="contact-label">Hours</p>
+          <p class="contact-hours">{{ site.business.hours }}</p>
+        </div>
+        <div>
+          <p class="contact-label">Address</p>
+          <a href="https://maps.app.goo.gl/1m63c49zTmR75ibcA">{{ site.business.address }}</a>
+        </div>
+      </div>
+    </div>
+  </section>
+{% endif %}

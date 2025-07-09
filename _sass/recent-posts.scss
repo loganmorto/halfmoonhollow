@@ -1,0 +1,65 @@
+.recent-posts-widget {
+    padding: 1rem 0;
+  }
+  
+  .recent-posts-widget ul {
+    list-style-type: none;
+    padding: 1em 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .recent-post-card {
+    border-radius: $radius;
+    overflow: hidden;
+    border: $border;
+    box-shadow: $box-shadow-half;
+  }
+  
+  .recent-post-link {
+    display: block;
+    position: relative;
+    height: 180px;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+  }
+  
+  .recent-post-link:hover {
+    transform: scale(1.02);
+  }
+  
+  .recent-post-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6));
+    display: flex;
+    align-items: flex-end;
+    padding: 1rem;
+  }
+  
+  .recent-post-title {
+    font-family: 'Cormorant Infant', serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  @media (min-width: 768px) {
+
+    .recent-posts-widget ul {
+        list-style-type: none;
+        padding: 1em 0;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+      }
+
+      .recent-posts-widget {
+        margin: 1em;
+      }
+
+  }

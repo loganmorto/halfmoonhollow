@@ -1,0 +1,141 @@
+/* General Navigation Styles */
+nav .current-page {
+    color: $accent-color;
+}
+
+nav li {
+    list-style: none;
+    // padding: 0.5em;
+    display: flex;
+;
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+.nav-link {
+    color: $foreground-color;
+    text-decoration: none;
+    padding: 1em;
+    width: 100%;
+    font-family: $font-accent;
+    letter-spacing: .12em;
+}
+
+.header-right .cta {
+    display: none;
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 12px; /* Add padding to increase the tap area */
+    box-sizing: content-box; /* Ensure padding doesn't affect width/height */
+
+    span {
+        display: block;
+        width: 100%;
+        height: 3px;
+        background-color: $foreground-color;
+        border-radius: 2px;
+        transition: all 0.3s;
+    }
+}
+
+.nav-wrapper {
+    position: fixed;
+    top: 64px;
+    right: 0;
+    height: calc(100vh - 64px);
+    transform: translateX(100%);
+    transition: transform 0.3s ease-out;
+    z-index: 1001;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    color: $card-color;
+    text-align: right;
+}
+
+.nav-wrapper.open {
+    transform: translateX(0);
+    pointer-events: auto;
+}
+
+
+
+
+.nav-wrapper.open> * {
+    pointer-events: auto ;
+}
+.nav-wrapper.open nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding-right: .5em;
+
+}
+
+/* Overlay Styles */
+.menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.88);
+    transform: translateX(100%);
+    transition: transform 0.3s ease-out;
+    z-index: 99;
+    // pointer-events: none;
+}
+
+.menu-overlay.active {
+    transform: translateX(0);
+    pointer-events: auto;
+}
+
+/* Responsive Styles, takes effect on screens larger that 768 */
+@media (min-width: 768px) {
+    .hamburger {
+        display: none;
+    }
+
+    .nav-wrapper {
+  display: none;
+
+    }
+
+    .nav-link {
+        padding: .5em;
+
+        font-weight: 600;
+        min-width: max-content;
+
+    }
+
+    .nav-link:hover {
+        // grow a little smoothly and underline the text 
+        transform: scale(1.05);
+        text-decoration: underline;
+    }
+    .nav-link:focus {
+        outline: none;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        gap: .5em;
+    }
+    }
+
+

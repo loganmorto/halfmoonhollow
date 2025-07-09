@@ -1,0 +1,37 @@
+title: Half Moon Hollow Development & Design
+
+description: >- # this means to ignore newlines until "baseurl:"
+  Western Carolina Waterscapes is the premier pond and waterscape service in Western North Carolina. We specialize in pond maintenance, pond construction, and water feature installation with a unique specialization in Koi fish to take your pond to the next level. We are a family owned and operated business that has been serving the Western North Carolina area for over 20 years. Our team of experts is dedicated to providing the highest quality service and products to our customers. We take pride in our work and strive to exceed our customers' expectations. Contact us today to learn more about our services and how we can help you create the perfect waterscape for your home or business.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://logan-morto.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+
+business:
+  email: "kevin@halfmoonhollow.com"
+  phone: "+1 (828) 450 - 9089"
+  hours: "8 - 5, by appt. only"
+  address: "15 Collenwood Rd, Arden, NC"
+
+
+collections:
+  pages:
+    output: true
+    permalink: /:name/
+
+
+# Build settings
+
+
+
+# Exclude from processing.
+# The following items will not be processed, by default.
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/

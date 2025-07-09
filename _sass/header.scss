@@ -1,0 +1,155 @@
+// _sass/_header.scss
+
+@use "variables" as *;  // Directly load variables
+
+// navigation and menu, including menu icon, is in navigation.scss
+
+section.head-contacts {
+  display: none;
+  justify-content: left;
+  gap: 1rem;
+  width: 100vw;
+  padding: 0;
+  padding-left: 2em;
+  height: 40px;
+}
+
+.head-contact {
+padding: .5em;
+}
+
+.header-base {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1300px;
+  width: 100%;
+
+  gap: .5em;
+
+}
+
+header {
+  padding: 0em 1em;
+  top: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  
+  /* Semi-transparent background so the blur is visible */
+  background: $background-color-frosted;
+  z-index: 100;
+  /* Backdrop filter for the blur effect */
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px); /* for Safari */
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  justify-content: center;
+}
+
+
+
+.header-left {
+  display: flex;
+  gap: 2em;
+  padding-left: 1.2em;
+}
+
+.header-right a {
+  display: none;
+  padding: 10px;
+}
+
+
+.logo {
+
+  transition: transform 0.3s ease-in-out;
+  display: flex;
+}
+.logo:hover {
+transform: scale(1.05);
+}
+.logo p {
+  padding: .5em 0;
+  font-family: 'Berkeley Std', serif;
+  font-size: 1.4rem;
+  color: $foreground-color;
+
+}
+
+
+.header-right {
+  display: flex;
+  gap: 1em;
+  align-items: center;
+}
+
+.head-contacts .call-to-action {
+  padding: .5em;
+  border: none;
+  box-shadow: none;
+  width: fit-content;
+  display: none;
+  gap: .5em;
+  border-radius: 4px;
+  margin: 0;
+}
+
+.desktop-nav {
+  display: none;
+}
+
+@media (min-width: 768px) {
+
+  .head-contacts .call-to-action {
+      display: flex;
+      text-decoration: underline;
+  }
+
+  .logo p {
+      min-width: none;
+  }
+
+  section.head-contacts {
+      display: flex;
+  }
+
+  .header-right a {
+      display: none;
+  }
+
+ .desktop-nav {
+  position: initial;
+  justify-content: center;
+  background-color: transparent;
+  margin-bottom: -4px;
+  top: 64px;
+  right: auto;
+  height: auto;
+  transform: none;
+  transition: none;
+  z-index: 1001;
+  flex-direction: column;
+  justify-content: center;
+  display: flex;
+  color: $foreground-color;
+  text-align: right;
+ }
+  
+}
+
+@media (min-width: 971px) {
+  .header-right .call-to-action {
+      display: flex;
+      padding: .5em;
+      margin: .75em;
+  }
+
+  .head-contacts .call-to-action {
+      display: none;
+  }
+
+
+}

@@ -1,0 +1,51 @@
+.case-studies{
+    margin: 2em auto;
+    display: flex;
+    flex-direction: column;
+    gap: 4em;
+    }
+    
+    .case-study>h2 {
+        font-size: 1.3em;
+        padding: 0;
+    }
+    
+    .case-study-tags {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .tag {
+        background: $accent-color;
+        color: $accent-foreground-color;
+        padding: .25em .5em;
+        margin: .55em 0;
+        margin-right: .55em;
+        border-radius: 100px;
+        white-space: nowrap; // Added this line to prevent text wrapping
+        font-size: .9em;
+    }
+    
+    .case-study {
+        display: flex;
+        flex-direction: column;
+        gap: .6em;
+        padding: 1.2em;
+        background: $card-color;
+        border-radius: 6px;
+        border: $border;
+        box-shadow: $box-shadow-half;
+        border-radius: $radius;
+    }
+    
+    .case-study-content {
+        display: flex;
+        flex-direction: column;
+        gap: .7em;
+    }
+    
+    .case-study-text {
+        display: flex;
+        flex-direction: column;
+        gap: .5em;
+    }

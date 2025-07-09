@@ -1,0 +1,29 @@
+- title: New Construction
+  slug: new-construction
+  image: /assets/images/10.jpg
+  description: >
+    We specialize in custom home builds from the ground up, tailored to your lifestyle and the unique character of western North Carolina. From planning and permitting to final finishes, we guide you through the process with clarity and craftsmanship.
+  offerings:
+    - Complete ground-up custom home builds
+    - Permitting and project management
+    - High-efficiency and green building options
+
+- title: Home Remodel
+  slug: home-remodel
+  image: /assets/images/9.jpg
+  description: >
+    Transform your existing space into the home you’ve always wanted. Whether it’s an addition, structural update, or whole-home redesign, we deliver thoughtful renovations that blend seamlessly with your home’s original character.
+  offerings:
+    - Full-home renovations and additions
+    - Basement and attic conversions
+    - Structural updates and layout changes
+
+- title: Kitchen Remodel
+  slug: kitchen-remodel
+  image: /assets/images/12.jpg
+  description: >
+    Create a kitchen that’s functional, beautiful, and built to last. We work closely with you on layout, cabinetry, appliances, and finishes to ensure every detail serves your lifestyle and adds value to your home.
+  offerings:
+    - Custom cabinetry and countertops
+    - Layout redesign and optimization
+    - Appliance upgrades and finish selection

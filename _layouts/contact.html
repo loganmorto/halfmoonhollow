@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }} | {{ site.title }}</title>
+    <link
+      rel="icon"
+      href="/assets/images/favicon.svg"
+      type="image/svg+xml">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Cormorant+Infant:ital,wght@0,300..700;1,300..700&family=Cormorant:ital,wght@0,300..700;1,300..700&family=Ibarra+Real+Nova:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+      <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Caveat:wght@400;700&display=swap" rel="stylesheet">
+
+      <!-- Styles -->
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+    <!-- Nav JS -->
+    <script src="{{ '/assets/js/navigation.js' | relative_url }}"></script>
+    <script src="{{ '/assets/js/header.js' | relative_url }}"></script>
+
+
+  </head>
+  <div class="menu-overlay"></div>
+  <body>
+
+    {% include header.html %}
+
+    <main style="grid-column: 1 / 5;  ">
+      <div class="page-title">
+        <h2>
+          {{ page.title }}
+        </h2>
+        <p>
+          {{ page.subheading }}
+        </p>
+      </div>
+      {{ content }}
+      {% include contact.html %}
+      {% include about.html %}
+      {% include service-regions.html %}
+      {% include gallery.html data="mini-gallery" %}
+      {% include recent-posts.html %}
+
+    </main>
+
+    {% include footer.html %}
+
+
+  </body>
+</html>

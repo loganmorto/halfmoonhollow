@@ -1,0 +1,18 @@
+<!-- _includes/recent-posts.html -->
+<aside class="recent-posts-widget">
+  <h3>Latest Pro Tips</h3>
+  <ul>
+    {% for post in site.posts limit: 3 %}
+      <li class="recent-post-card">
+        <a
+          href="{{ post.url }}"
+          class="recent-post-link"
+          style="background-image: url('{{ post.image }}');">
+          <div class="recent-post-overlay">
+            <p class="recent-post-title">{{ post.title }}</p>
+          </div>
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+</aside>

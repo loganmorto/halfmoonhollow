@@ -1,0 +1,30 @@
+<div class="case-studies" style="grid-column: span 12;">
+  {% for case_study in site.data.case-studies %}
+    <div class="case-study">
+      <h2>
+        <span style="text-decoration: underline;">
+          Project Title</span>: {{ case_study.title }}</h2>
+      <div class="case-study-content">
+        <div class="case-study-text">
+          <p>
+            <span style="text-decoration: underline;">
+              Location</span>: {{ case_study.location }}</p>
+          <p>{{ case_study.description }}</p>
+          <div class="case-study-tags">
+            {% for tag in case_study.tags %}
+              <span class="tag">{{ tag }}</span>
+            {% endfor %}
+          </div>
+        </div>
+        <div class="case-study-images gallery">
+          {% for image in case_study.images %}
+            <a href="{{ image }}" class="lightbox-image">
+              <img src="{{ image }}" alt="{{ case_study.title }}">
+            </a>
+          {% endfor %}
+        </div>
+      </div>
+
+    </div>
+  {% endfor %}
+</div>

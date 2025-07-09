@@ -1,0 +1,309 @@
+// _sass/_base.scss
+@use "variables" as *;  // Directly load variables
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  background-color: $background-color;
+  color: $foreground-color;
+  font-family: $font-primary;
+  margin: 0 auto;
+  padding: 0 1em;
+  line-height: 1.5;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  column-gap: 0.5em
+  
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  color: $foreground-color;
+  font-family: "Cormorant", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+// <weight>: Use a value from 300 to 700
+// <uniquifier>: Use a unique and descriptive class name
+
+
+h1 {
+  font-size: 2.2em;
+}
+h2 {
+  font-size: 1.2em;
+}
+h3 {
+  font-size: 1.6em;
+}
+
+a {
+  color: $accent-color;
+  text-decoration: none;
+
+  // &:hover {
+  //   color: adjust($accent-color, 10%);
+  // }
+}
+
+button {
+  background-color: $accent-color;
+  color: $foreground-color;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: adjust($accent-color, 10%);
+  }
+}
+
+.call-to-action {
+  padding: 1em;
+  font-size: 14px;
+  color: $accent-foreground-color;
+  background-color: $accent-color;
+  box-shadow: $box-shadow-quarter;
+  border: 1px solid $accent-foreground-color;
+  text-decoration: none;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: .5em;
+
+  transition: transform 0.3s ease-in-out, text-decoration 0.3s ease-in-out;
+}
+.call-to-action:hover {
+filter: saturate(1.5);
+  color: var(--background);
+  text-decoration: underline;
+  transform: scale(1.05);
+  position: relative;
+  z-index: 105;
+}
+
+.call-to-action-alt {
+  background-color: $card-color;
+  box-shadow: $box-shadow-quarter;
+  color: $card-foreground-color;
+  border-color: $card-foreground-color;
+}
+
+.cta-hero-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1em;
+  padding: 0 1em;
+}
+
+
+.hero-text img {
+  max-width: 80px;
+  border: none;
+}
+
+.hero-text-accent {
+  color: $muted-foreground-color;
+}
+
+.hero-video-wrapper {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  // transform: translateY(85%) scale(0);
+  opacity: 0;
+  transition:
+    // transform 1.2s ease-out,
+    opacity 4s cubic-bezier(0.3, 1.2, 0.7, 1);
+  transform-origin: center center;
+}
+.hero-video-wrapper.visible {
+  opacity: 1;
+  // transform: translateY(0) scale(1);
+}
+
+.hero-video-wrapper.visible::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 2; /* just above video, below text/buttons */
+  background: radial-gradient(
+    ellipse at center,
+    rgba(0, 0, 0, 0) 40%,
+    rgba(0, 0, 0, 0.4) 100%
+  );
+}
+
+
+.hero-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+#hero-text,
+.cta-hero-wrapper {
+  position: relative;
+  z-index: 1;
+}
+
+.cta-hero-wrapper {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: transform 0.6s ease-out, opacity 0.6s ease-out;
+}
+
+.cta-hero-wrapper.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
+
+.facebook-banner {
+  background-color: $accent-color;
+  max-width: 100vw;
+  margin: 0 -1em;
+  padding: 1em;
+  color: $accent-foreground-color;
+  grid-column: 1 / 5;
+  z-index: 20;
+}
+
+.facebook-banner a {
+  color: $popover-color;
+}
+
+.section-header {
+  font-size: 2.5em;
+  font-family: $font-accent;
+
+  text-align: center;
+  padding: .5em;
+}
+
+
+.hero-section {
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2em;
+  margin-bottom: 0;
+  position: relative;
+  height: calc(100vh - 56px);
+  width: 100vw;
+  margin-left: -1em;
+  margin-right: -1em;
+  grid-column: 1 / 5;
+}
+
+@media (min-width: 768px) {
+
+  .hero-text img {
+    display: none;
+  }
+
+  .hero-image-wrapper {
+    width: 100%;
+    margin: 0;
+    margin-top: 2em;
+    overflow: visible;
+  }
+
+
+  .facebook-banner {
+   grid-column: 1 / 5;
+    margin-bottom: 2.5em ;
+
+  }
+}
+
+@media (min-width:1200px) {
+  .facebook-banner {
+    margin-bottom: 2.5em ;
+    grid-column: 1 / 5;
+  }
+}
+
+
+#hero-text {
+  font-size: 2rem;
+  line-height: 1.4;
+  max-width: max-content;
+  font-feature-settings: "liga" off, "kern" off;
+  letter-spacing: 0.1em;
+  background-color: $background-color-frosted;
+  margin-top: 104px;
+  padding: 1em;
+  outline: 1px solid transparent; // start invisible
+
+  transition: outline-color 0.6s ease-out;
+}
+
+#hero-text.border-visible {
+  outline-color: $foreground-color; // fade to visible
+}
+
+
+#line1 {
+  font-family: 'Berkeley Std';
+  
+}
+
+#line2 {
+  font-size: 1.4rem;
+  line-height: 2em;
+  font-family: 'Work Sans';
+}
+
+
+.blink {
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+}
+
+
+.hidden {
+  visibility: hidden;
+}
+
+#line2-text>span>.cursor {
+  height: 1.4em;
+}
+
+.cursor {
+  display: inline-block;
+  width: 2px;
+  height: 1em;
+  background-color: $foreground-color;
+  vertical-align: text-bottom;
+  animation: blink 1s step-end infinite;
+  margin: 0;
+  padding: 0;
+}
+
+.highlight {
+  background: $accent-color;
+  color: $accent-foreground-color;
+}
+
+.underline {
+  text-decoration: underline;
+}
