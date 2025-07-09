@@ -1,7 +1,4 @@
 // _sass/_header.scss
-
-@use "variables" as *;  // Directly load variables
-
 // navigation and menu, including menu icon, is in navigation.scss
 
 section.head-contacts {
@@ -70,6 +67,7 @@ header {
 
   transition: transform 0.3s ease-in-out;
   display: flex;
+  gap: 1em;
 }
 .logo:hover {
 transform: scale(1.05);
@@ -82,6 +80,9 @@ transform: scale(1.05);
 
 }
 
+.logo img {
+  width: 50px;
+}
 
 .header-right {
   display: flex;
