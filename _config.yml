@@ -16,6 +16,9 @@ collections:
   pages:
     output: true
     permalink: /:name/
+  services:
+    output: true
+    permalink: /services/:slug/
 
 
 # Build settings

@@ -1,16 +1,20 @@
 <section class="services-sections">
   <h2 class="section-header">Our Specialties</h2>
   <div class="services-container">
-    {% for service in site.data.servicesSection %}
+    {% for service in site.data.services %}
       <div class="services-section">
         <img
           src="{{ service.image | relative_url }}"
           style="width: 100%;"
           alt="">
         <h3>{{ service.title }}</h3>
-        {% if service.description %}
+        {% if service.short-description %}
           <span class="divider"></span>
-          <p>{{ service.description }}</p>
+          <p>
+            {{ service.short-description }}
+            <br>
+          </p>
+          <a href="{{ '/services/' | append: service.slug | append: '/' | relative_url }}" style="text-decoration: underline;">Learn more</a>
         {% endif %}
       </div>
     {% endfor %}

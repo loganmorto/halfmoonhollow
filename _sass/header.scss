@@ -74,6 +74,7 @@ transform: scale(1.05);
 }
 .logo p {
   padding: .5em 0;
+  padding-top: .8em;
   font-family: 'Berkeley Std', serif;
   font-size: 1.4rem;
   color: $secondary-color;
@@ -82,6 +83,7 @@ transform: scale(1.05);
 
 .logo img {
   width: 50px;
+  display: none;
 }
 
 .header-right {
@@ -114,6 +116,10 @@ transform: scale(1.05);
 
   .logo p {
       min-width: none;
+  }
+
+  .logo img {
+    display: flex;
   }
 
   section.head-contacts {
