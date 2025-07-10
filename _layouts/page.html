@@ -43,7 +43,9 @@
         </p>
       </div>
       {{ content }}
-      {% include about.html %}
+      {% unless page.url == "/about/" %}
+        {% include about.html %}
+      {% endunless %}
       {% include service-regions.html %}
       {% include gallery.html data="mini-gallery" %}
       {% include recent-posts.html %}
