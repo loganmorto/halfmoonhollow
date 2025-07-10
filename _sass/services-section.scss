@@ -6,6 +6,7 @@
     background-color: $card-color;
     border-radius: $radius;
     margin: 1em 0;
+    margin-top: 2em;
     box-shadow: $box-shadow-half;
 }
 
@@ -46,6 +47,10 @@
     .services-container {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+    }
+
+    .services-sections {
+        padding-top: 1em;
     }
 
     .services-section img {
