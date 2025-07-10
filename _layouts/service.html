@@ -1,0 +1,32 @@
+---
+layout: page
+---
+
+{% assign service = site.data.services | where: "slug", page.slug | first %}
+
+<section class="service-detail">
+  <img src="{{ service.image | relative_url }}" alt="">
+  <h1>{{ service.title }}</h1>
+  <p>{{ service.description }}</p>
+
+  {% if service.offerings %}
+    <h3>What We Offer</h3>
+    <ul>
+      {% for item in service.offerings %}
+        <li>{{ item }}</li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+
+  {% if service.projects %}
+    <h3>Featured Projects</h3>
+    <ul>
+      {% for slug in service.projects %}
+        {% assign project = site.data.portfolio | where: "slug", slug | first %}
+        <li>
+          <a href="/portfolio/{{ project.slug }}/">{{ project.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+</section>

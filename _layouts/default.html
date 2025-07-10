@@ -32,11 +32,10 @@
 
     {% include header.html %}
 
-    <main style="grid-column: 1 / 5; max-width: 1200px;  ">
+    <main style="grid-column: 1 / 5; max-width: 1200px; margin: 0 auto;  max-width: 1200px;  ">
       {{ content }}
       {% include services.html %}
       {% include about.html %}
-      {% include brands.html %}
       {% include service-regions.html %}
       {% include gallery.html data="mini-gallery" %}
       {% include recent-posts.html %}

@@ -67,6 +67,24 @@ button {
   }
 }
 
+.button {
+  background-color: $accent-color;
+  color: $background-color;
+  border: none;
+  padding: 1em;
+  margin: 1em;
+  display: flex;
+  justify-content: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: adjust($accent-color, 10%);
+  }
+}
+
+
 .call-to-action {
   padding: 1em;
   font-size: 14px;

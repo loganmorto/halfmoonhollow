@@ -25,6 +25,10 @@ subheading: From New Construction to Kitchen Remodels, Half Moon Hollow is the c
               {% endfor %}
             </ul>
           {% endif %}
+          <a
+            href="{{ '/services/' | append: service.slug | append: '/' | relative_url }}"
+            class="button"
+            style="text-decoration: underline;">Learn more</a>
         </div>
       </div>
     </div>
