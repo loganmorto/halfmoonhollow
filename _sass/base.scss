@@ -87,10 +87,10 @@ button {
 
 .call-to-action {
   padding: 1em;
-  font-size: 14px;
+  font-size: 1.1em;
   color: $accent-foreground-color;
   background-color: $accent-color;
-  box-shadow: $box-shadow-quarter;
+  box-shadow: $box-shadow-half;
   border: 1px solid $accent-foreground-color;
   text-decoration: none;
   width: fit-content;
@@ -102,7 +102,7 @@ button {
 
 .call-to-action-alt {
   background-color: $card-color;
-  box-shadow: $box-shadow-quarter;
+  box-shadow: $box-shadow-half;
   color: $card-foreground-color;
   border-color: $card-foreground-color;
 }
