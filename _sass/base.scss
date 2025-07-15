@@ -233,7 +233,7 @@ filter: saturate(1.5);
   gap: 1.2em;
   margin-bottom: 0;
   position: relative;
-  height: calc(100dvh - 56px);
+  height: calc(100svh - 70px);
   width: 100vw;
   margin-left: -1em;
   margin-right: -1em;
@@ -266,6 +266,11 @@ filter: saturate(1.5);
     margin-bottom: 2.5em ;
     grid-column: 1 / 5;
   }
+
+  #hero-text {
+    letter-spacing: 0.1em;
+    margin-top: 104px;
+  }
 }
 
 
@@ -274,9 +279,9 @@ filter: saturate(1.5);
   line-height: 1.4;
   max-width: max-content;
   font-feature-settings: "liga" off, "kern" off;
-  letter-spacing: 0.1em;
+  // letter-spacing: 0.1em;
   background-color: $background-color-frosted;
-  margin-top: 104px;
+  margin-top: 96px;
   padding: 1em;
   outline: 1px solid transparent; // start invisible
 
