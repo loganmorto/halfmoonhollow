@@ -32,6 +32,10 @@
   margin-bottom: 0.3em;
 }
 
+.icons > p {
+  display: none;
+}
+
 .google-icon {
   width: 28px;
 }
@@ -76,3 +80,8 @@
     opacity: 1;
   }
   
+  @media (min-width: 968px) {
+    .icons > p {
+      display: flex;
+    }
+  }
