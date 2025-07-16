@@ -111,8 +111,7 @@ nav ul {
   }
   
   .has-children:hover .submenu {
-    display: grid;
-    grid-template-columns: repeat( 3 , 1fr);
+    display: flex;
   }
 
   .has-children > a {
@@ -216,6 +215,11 @@ display: none;
   .has-children {
     position: relative;
     flex-direction: row;
+  }
+
+  .has-children:hover .submenu {
+    display: grid;
+    grid-template-columns: repeat( 3 , 1fr);
   }
 
   .submenu > li > a {

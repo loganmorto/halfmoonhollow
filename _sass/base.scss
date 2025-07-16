@@ -16,9 +16,11 @@ body {
   line-height: 1.5;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-
   column-gap: 0.5em
-  
+}
+
+img {
+  width: 100%;
 }
 
 
