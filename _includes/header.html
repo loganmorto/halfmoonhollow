@@ -1,18 +1,30 @@
 <header>
   <section class="head-contacts">
-    <div class="head-contact">
-      email:
-      <a href="mailto:{{ site.business.email }}">{{ site.business.email }}</a>
+    <div class="head-contacts-left">
+      <div class="head-contact">
+        email:
+        <a href="mailto:{{ site.business.email }}">{{ site.business.email }}</a>
+      </div>
+      <div class="head-contact">
+        phone:
+        <a href="tel:{{ site.business.phone  }}">{{ site.business.phone }}</a>
+      </div>
     </div>
-    <div class="head-contact">
-      phone:
-      <a href="tel:{{ site.business.phone  }}">{{ site.business.phone }}</a>
+    <div class="head-contacts-right">
+      <a href="{{ site.facebookurl }}">
+        <img src={{ "/assets/images/logos/Facebook_Logo_Primary.png" | relative_url }} alt="facbook logo">
+        Facebook
+      </a>
+      <a href="{{ site.buildzoomurl }}">
+        <img src={{ "/assets/images/logos/buildzoom-logo.png" | relative_url }} alt="buildzoom logo">
+        BuildZoom
+      </a>
     </div>
   </section>
   <div class="header-base">
     <div class="header-left">
       <a class="logo" href="{{ '/' | relative_url }}">
-        <img src="{{ 'assets/images/logoimg.svg' | relative_url }}" alt="">
+        {% comment %} <img src="{{ 'assets/images/logoimg.svg' | relative_url }}" alt=""> {% endcomment %}
         <p>
           <span style="white-space: nowrap ;">HALF MOON
           </span>

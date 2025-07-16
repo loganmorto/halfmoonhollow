@@ -3,9 +3,8 @@
 
 section.head-contacts {
   display: none;
-  justify-content: left;
+  justify-content: space-between;
   gap: 1rem;
-  width: 100vw;
   padding: 0;
   padding-left: 2em;
   height: 40px;
@@ -147,6 +146,26 @@ transform: scale(1.05);
   display: flex;
   color: $secondary-color;
   text-align: right;
+ }
+
+.head-contacts-left {
+  display: flex;
+}
+
+.head-contacts-right {
+  display: flex;
+  gap: 1em;
+  align-items: center;
+}
+
+.head-contacts-right > a {
+display: flex;
+gap: .5em;
+  height: 24px;
+}
+
+ .head-contacts-right > a > img {
+  width: 24px;
  }
   
 }

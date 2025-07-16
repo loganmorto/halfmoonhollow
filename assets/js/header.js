@@ -1,23 +1,29 @@
-// document.addEventListener("DOMContentLoaded", function () {
-//     const navWrapper = document.querySelector(".nav-wrapper");
-//     const headerRight = document.querySelector(".header-left");
-//     const header = document.querySelector("header");
-
-//     function updateNavPosition() {
-//         if (window.innerWidth > 768) {
-//             if (!headerRight.contains(navWrapper)) {
-//                 headerRight.appendChild(navWrapper);
-//             }
-//         } else {
-//             if (!Array.from(header.children).includes(navWrapper)) {
-//                 header.appendChild(navWrapper); // Move it back as a direct child of <header>
-//             }
-//         }
-//     }
-
-//     // Run on initial load
-//     updateNavPosition();
-
-//     // Run on window resize
-//     window.addEventListener("resize", updateNavPosition);
-//   });
+document.addEventListener("DOMContentLoaded", function () {
+    const header = document.querySelector("header");
+  
+    let lastScrollY = window.scrollY;
+    let currentTop = 0;
+    const minTop = -40;
+    const maxTop = 0;
+  
+    function clamp(val, min, max) {
+      return Math.min(Math.max(val, min), max);
+    }
+  
+    function updateHeaderPosition() {
+      const newScrollY = window.scrollY;
+      const delta = newScrollY - lastScrollY;
+  
+      // Only apply if delta is not zero (actually scrolled)
+      if (delta !== 0) {
+        currentTop = clamp(currentTop - delta, minTop, maxTop);
+        header.style.top = `${currentTop}px`;
+      }
+  
+      lastScrollY = newScrollY;
+    }
+  
+    window.addEventListener("scroll", () => {
+      requestAnimationFrame(updateHeaderPosition);
+    });
+  });

@@ -16,7 +16,5 @@
       card-image-link: "/assets/images/3.jpg"
 - name: "Portfolio"
   link: "/portfolio/"
-- name: "Pro Tips"
-  link: "/pro-tips/"
 - name: "Contact"
   link: "/contact/"

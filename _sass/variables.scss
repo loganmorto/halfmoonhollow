@@ -6,6 +6,7 @@ $background-color: hsl(210, 15%, 10%);  /* Deep Charcoal Blue */
 $background-color-frosted: hsla(210, 15%, 10%, 0.7);  /* Frosted background */
 
 $foreground-color: hsl(0, 0%, 90%); // Light Grey Text
+$foreground-color-sevenfive: hsla(0, 0%, 90%, 0.75);
 $foreground-color-half: hsla(0, 0%, 90%, 0.5);
 $foreground-color-quarter: hsla(0, 0%, 90%, 0.25);
 
@@ -48,5 +49,6 @@ $font-primary: 'Work Sans', sans-serif;
 $font-accent: 'Berkeley Std', serif;
 
 $border: 2px solid $card-color;
+$box-shadow-sevenfive: 0 4px 12px $foreground-color-sevenfive;
 $box-shadow-half: 0 4px 12px $foreground-color-half;
 $box-shadow-quarter: 0 4px 12px $foreground-color-quarter;
