@@ -28,6 +28,7 @@
     border-radius: $radius;
     border: 1px solid $foreground-color;
     object-fit: cover;
+    aspect-ratio: 1.61 / 1;
 }
 
 .services-section {

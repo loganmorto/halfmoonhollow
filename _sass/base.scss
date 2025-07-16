@@ -89,7 +89,7 @@ button {
 
 .call-to-action {
   padding: 1em;
-  font-size: 1.1em;
+  font-size: .9em;
   color: $accent-foreground-color;
   background-color: $accent-color;
   box-shadow: $box-shadow-half;
@@ -135,7 +135,7 @@ filter: saturate(1.5);
   flex-direction: row;
   flex-wrap: nowrap;
   gap: .5em;
-  padding: 0 1em;
+  padding: 0 .5em;
 }
 
 
@@ -257,6 +257,9 @@ filter: saturate(1.5);
     overflow: visible;
   }
 
+  .call-to-action {
+    font-size: 1.1em;
+  }
 
   .facebook-banner {
    grid-column: 1 / 5;
