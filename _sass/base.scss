@@ -93,6 +93,7 @@ button {
   box-shadow: $box-shadow-half;
   border: 1px solid $accent-foreground-color;
   text-decoration: none;
+  text-align: center;
   width: fit-content;
   display: flex;
   align-items: center;
@@ -130,8 +131,8 @@ filter: saturate(1.5);
 .cta-hero-wrapper {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  gap: 1em;
+  flex-wrap: nowrap;
+  gap: .5em;
   padding: 0 1em;
 }
 
@@ -264,6 +265,10 @@ filter: saturate(1.5);
   #hero-text {
     letter-spacing: 0.1em;
     margin-top: 104px;
+  }
+
+  .cta-hero-wrapper {
+    gap: 1em;
   }
 }
 
