@@ -238,6 +238,7 @@ filter: saturate(1.5);
   margin-left: -1em;
   margin-right: -1em;
   grid-column: 1 / 5;
+  overflow: hidden;
 }
 
 @media (min-width: 768px) {
@@ -259,6 +260,11 @@ filter: saturate(1.5);
     margin-bottom: 2.5em ;
 
   }
+
+  #hero-text {
+    letter-spacing: 0.1em;
+    margin-top: 104px;
+  }
 }
 
 @media (min-width:1200px) {
@@ -267,10 +273,7 @@ filter: saturate(1.5);
     grid-column: 1 / 5;
   }
 
-  #hero-text {
-    letter-spacing: 0.1em;
-    margin-top: 104px;
-  }
+
 }
 
 
@@ -281,7 +284,7 @@ filter: saturate(1.5);
   font-feature-settings: "liga" off, "kern" off;
   // letter-spacing: 0.1em;
   background-color: $background-color-frosted;
-  margin-top: 96px;
+
   padding: 1em;
   outline: 1px solid transparent; // start invisible
 

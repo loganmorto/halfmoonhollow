@@ -53,8 +53,9 @@ header {
 
 .header-left {
   display: flex;
+  align-items: center;
   gap: 2em;
-  padding-left: 1.2em;
+  padding-left: .5em;
 }
 
 .header-right a {
@@ -107,7 +108,7 @@ transform: scale(1.05);
   display: none;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 968px) {
 
   .head-contacts .call-to-action {
       display: flex;
@@ -150,7 +151,7 @@ transform: scale(1.05);
   
 }
 
-@media (min-width: 971px) {
+@media (min-width: 968px) {
   .header-right .call-to-action {
       display: flex;
       padding: .5em;

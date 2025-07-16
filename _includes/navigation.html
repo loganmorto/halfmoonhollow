@@ -1,10 +1,30 @@
 <nav>
-  <ul>
+  <ul class="main-nav">
     {% for item in site.data.navigation %}
-      <li>
-        <a href="{{ item.link | relative_url}}" class="nav-link {% if page.url == item.link %}current-page{% endif %}">
-          {{ item.name }}
+      <li class="nav-item {% if item.children %}has-children{% endif %}">
+        <a href="{{ item.link | relative_url }}" class="nav-link {% if page.url == item.link %}current-page{% endif %}">
+          {% if item.children %}
+            <span>{{ item.name }}<span class="chevron-down"></span>
+            </span>
+          {% else %}
+            {{ item.name }}
+          {% endif %}
         </a>
+
+        {% if item.children %}
+          <ul class="submenu">
+            {% for child in item.children %}
+              <li>
+                <a href="{{ child.link | relative_url }}" class="submenu-link">
+                  {{ child.name }}
+                  {% if child.card-image-link %}
+                    <img src="{{ child.card-image-link | relative_url }}" alt="{{ child.name }}">
+                  {% endif %}
+                </a>
+              </li>
+            {% endfor %}
+          </ul>
+        {% endif %}
       </li>
     {% endfor %}
   </ul>

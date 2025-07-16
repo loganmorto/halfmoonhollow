@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const header = document.querySelector("header");
 
     function isSmallScreen() {
-        return window.innerWidth < 768;
+        return window.innerWidth < 968;
     }
 
     function setupHamburgerMenu() {

@@ -1,0 +1,160 @@
+- name: Jacqui A.
+  profile_photo: /assets/reviews/profile-photos/Jacqui Adams.png
+  review_count: 62
+  local_guide: true
+  rating: 5
+  date: 2024-03-25 # 16 weeks ago from July 14, 2025
+  content: >
+    Half Moon Hollow did a superb job of rebuilding my garage after it was damaged by trees falling on and into it by Hurricane Helene. Kevin is an excellent communicator and always kept us informed. He is extremely pleasant to work with and seems to always be in an upbeat positive mood. He was always just a text away when I had questions. The construction was top-notch and the painting and detailing were excellent. The crews were hard-working, pleasant and polite. Kevin went out of his way to find light fixtures for the garage that would be as good replacement for what was there before the damage (actually the new ones are better!). I would highly recommend them for your construction and remodeling projects.
+  notes:
+    positive: []
+    services: []
+  images: []
+- name: R L.
+  profile_photo: /assets/reviews/profile-photos/R Led4d.png
+  review_count: 4
+  local_guide: false
+  rating: 5
+  date: 2024-03-16 # 16 weeks ago from July 14, 2025
+  content: >
+    Half Moon Hollow truly made our home a HOME. Kevin did a gorgeous covered front porch, as well as a back deck addition, and large two story finished garage/bonus room, and he handled everything! every step of the way with the utmost respect, care, and competence, and we would hire him and his crews a hundred times over. Any concern we had- he was on top of it. Any questions we had, he helped us figure it out. Clarissa is also a design genious and they make a wonderful team. We are so grateful for this company and their expertise. Highly recommend and definitely hope to use their services again someday!!  notes:
+  notes:
+    positive: []
+    services: []
+  images: []
+- name: Carla H.
+  profile_photo: /assets/reviews/profile-photos/Carla Heatherly.png
+  review_count: 4
+  local_guide: false
+  rating: 5
+  date: 2024-03-16 
+  content: >
+    We had the absolute BEST experience working with Kevin and his crew on replacing our 20-year-old deck. From my initial email requesting a quote (complete with my not-to-scale drawing of what we wanted), Kevin was kind, knowledgeable, and immediately felt like one of our people. After meeting with him, we knew he was the right fit for our project. Kevin embraced our vision and brought new ideas that made it even better. Together, we designed and built what I believe to be the coolest deck ever. I am not exaggerating.
+
+    Once the deck was complete, we hired Kevin to replace our old asphalt shingle roof with a gorgeous standing seam metal roof, which turned out perfectly. And now, we're getting quotes on some other smaller projects around the house because there's no better person to collaborate with who will deliver results that exceed our expectations.
+
+    We loved working with Half Moon Hollow and seeing Kevin on his daily check-ins, so we'll likely find things for him to do around here for the rest of our lives. We completely trust Kevin and genuinely like him; he and his crew are friendly, authentic, skilled, and honest people who create beautiful things. If Google had more stars, HMH would get them all!
+  notes:
+    positive: []
+    services: []
+  images: []
+- name: Jonathan B.
+  profile_photo: /assets/reviews/profile-photos/Jonathan Bowers.png
+  review_count: 11
+  local_guide: false
+  rating: 5
+  date: 2024-06-09 
+  content: >
+    What a great experience with Half Moon Hollow! We contracted for a full kitchen remodel and they were simply the best - we could not be more pleased. Kevin and Clarissa are wonderful and a pleasure to work with as they guide you through the entire process. They partner with high-quality suppliers for custom cabinets, appliances and counters and their sub work has been excellent. They are easy to work with, honest, trustworthy and do what they say (and more) in the timeframe they commit to. Many of the features in our kitchen that we love were from suggestions by Kevin and Clarissa - things we would not have considered otherwise. Appreciate everything they have done to make our vision a reality! We will definitely work with them again on any future projects.
+  notes:
+    positive: []
+    services: []
+  images: [assets/reviews/profile-photos/Jonathan Bowers-1.webp, assets/reviews/profile-photos/Jonathan Bowers-2.webp]
+- name: Alex S.
+  profile_photo: /assets/reviews/profile-photos/Alex Savely.png
+  review_count: 30
+  local_guide: true
+  rating: 5
+  date: 2024-06-12 
+  content: >
+    I have worked with Half Moon Hollow on multiple projects as a sub and it has always been a great experience. Kevin runs a tight ship and everything flows easy on his job sites. I would highly recommend anyone looking at a new build, extension or remodel project to give Half Moon Hollow a call.
+  notes:
+    services: []
+    positive: []
+  images: []
+- name: Bowie V.L.
+  profile_photo: /assets/reviews/profile-photos/Bowie van Ling.png
+  review_count: 39
+  local_guide: true
+  rating: 5
+  date: 2024-02-23 
+  content: >
+    Been an absolute pleasure working with Kevin and Half Moon Hollow. Great attitudes, and attention to detail. Thoughtful planning and good communicators. All the right stuff!
+  notes:
+    services: []
+    positive: []
+  images: []
+- name: Benjamin M.
+  profile_photo: /assets/reviews/profile-photos/Benjamin Meggs.png
+  review_count: 1
+  local_guide: false
+  rating: 5
+  date: 2022-08-05 
+  content: >
+    Highly recommend this company. Kevin kept me informed throughout the project. Quality materials used. Work crews encouraged while he supervised. He gave and accepted suggestions. Very happy with remodel.
+  notes:
+    services: [Remodeling, Project Management, Roof building]
+    positive: [Professionalism]
+  images: []
+- name: eric k.
+  profile_photo: /assets/reviews/profile-photos/eric kim.png
+  review_count: 3
+  local_guide: false
+  rating: 5
+  date: 2022-09-25 
+  content: >
+    Very professional and detail oriented, new roofer accidentally caused a leak. This company assessed/repaired damages to original condition prior to damage.
+  notes:
+    services: []
+    positive: [Professionalism]
+  images: []
+- name: Jean L.
+  profile_photo: /assets/reviews/profile-photos/Jean LaFratta.png
+  review_count: 1
+  local_guide: false
+  rating: 5
+  date: 2022-02-24 
+  content: >
+    I would highly recommend this company. Kevin was wonderful to work with and the people that did the work were fantastic and very professional. They expanded my screened in porch and you cannot tell that is was not original to the house. Would hire them again in a heart beat.
+  notes:
+    services: [Remodeling]
+    positive: [Professionalism, Quality, Responsiveness]
+  images: []
+- name: Ryan T.
+  profile_photo: /assets/reviews/profile-photos/Ryan Terry.png
+  review_count: 4
+  local_guide: false
+  rating: 5
+  date: 2022-02-22 
+  content: >
+    Kevin is a cut above the rest. with both patience and great communication he makes the remodeling process so much less stressful with build quality second to none.
+  notes:
+    services: [Remodeling]
+    positive: [Professionalism, Quality, Responsiveness, Value]
+  images: []
+- name: Trey L.
+  profile_photo: /assets/reviews/profile-photos/Trey Lyon.png
+  review_count: 60
+  local_guide: true
+  rating: 5
+  date: 2021-07-14 
+  content: >
+    Kevin was a pleasure to work with. He is a man of integrity, and it shows in his work and the way he does business. I would get frequent updates and knew that if a problem came up, that he would be able to fix it in a timely manner. He's a wealth of knowledge and experience and I'd HIGHLY recommend him to anyone who is building a new home, doing a remodel, or having site-prep work done of their home. Can't say enough good things about his work and his process. Next time I need work done, Kevin will be the first person I call. He jumped through hoops getting Duke to deliver our rural area electricity, dealt with Henderson County on numerous occasions to ensure our site was set up properly, and work out the details for the site-prep for our home. He was efficient, transparent, and did a great job at keeping lines of communication open.
+  notes:
+    services: [Consultation, Demolition, Design, Project Management]
+    positive: [Professionalism, Quality, Responsiveness, Value]
+  images: []
+- name: Amy C.
+  profile_photo: /assets/reviews/profile-photos/Amy Conard.png
+  review_count: 1
+  local_guide: False
+  rating: 5
+  date: 2020-10-04 
+  content: >
+    This contractor built us a deck. This was a very good experience for us, and we will definitely use their services again. Kevin listened very well- we had some ideas for now and some ideas for the future, but were unsure of some of the details. He offered really good advice and excellent planning. We ended up with a deck that is beautiful, functional, and will be easy to modify in the future when we are able to add stairs, or screen and cover it. He paid attention to code and safety; this was very solid and gorgeous work. He also kept wood waste to a minimum, which was nice both for environmental reasons and for cost.
+  notes:
+    services: []
+    positive: [Professionalism, Quality, Responsiveness, Value, Punctuality]
+  images: []
+- name: Beth B.
+  profile_photo: /assets/reviews/profile-photos/Beth Brinkley.png
+  review_count: 9
+  local_guide: False
+  rating: 5
+  date: 2020-09-28 
+  content: >
+    We couldn’t be happier with how all of our remodel turned out! Kevin listened for us and what we wanted. He quickly got a feel for our style so he was able make suggestions based on that. We had a great communication line so he felt confident making decisions without having to check every little detail with us. Frequently we didn’t know what we wanted and he was able to point us in the right direction. He’s a perfectionist and will not stop until he’s happy with the look and functionality of each project. We’ve already got him lined up for more projects in the very near future! And all of this from a guy we just met out mountain biking!!!
+  notes:
+    services: [Remodeling, Install flooring, Tile work installation, Plumbing ficture installation, Paint indoors, Waterproofing]
+    positive: [Professionalism, Quality, Responsiveness, Punctuality]
+  images: []

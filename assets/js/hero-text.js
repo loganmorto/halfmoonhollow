@@ -173,6 +173,10 @@ function runAnimation() {
             // Step 1: Reveal CTA buttons
             const cta = document.querySelector('.cta-hero-wrapper');
             cta.classList.add('visible');
+            
+            // 👉 Show the animated Google reviews element
+            const reviewsEl = document.getElementById('google-reviews-short');
+            reviewsEl?.classList.add('visible');            
 
             // 👉 Fade in border around hero-text
             const heroText = document.getElementById('hero-text');
