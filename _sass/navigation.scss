@@ -114,6 +114,10 @@ nav ul {
     display: flex;
   }
 
+  footer .has-children:hover .submenu {
+    display: block;
+  }
+
   .footer-nav .has-children > a {
     min-height: 100%;
     min-height: 44px;
