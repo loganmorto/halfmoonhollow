@@ -114,9 +114,19 @@ nav ul {
     display: flex;
   }
 
-  .has-children > a {
+  .footer-nav .has-children > a {
     min-height: 100%;
+    min-height: 44px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    width: 100%;
   }
+
+  .footer-nav .submenu a {
+    padding: 0 1em;
+  }
+
 
   .submenu > li > a:hover { 
     transform: scale(1.05);
@@ -196,6 +206,7 @@ display: none;
     right: 0;
     padding: 1em;
     background-color: $accent-color;
+    box-shadow: $box-shadow-dark;
     display: none;
     justify-content: space-evenly;
     gap: 2em;
@@ -215,6 +226,10 @@ display: none;
   .has-children {
     position: relative;
     flex-direction: row;
+  }
+
+  .has-children > a {
+    min-height: 100%;
   }
 
   .has-children:hover .submenu {

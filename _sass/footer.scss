@@ -3,7 +3,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    gap: .5em;
+    gap: 1em;
     padding-top: 1em;
     padding-bottom: .5em;
 
@@ -24,13 +24,14 @@ footer p {
 .footer-container {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     width: 100%;
 }
 
 .footer-nav {
     display: flex;
     flex-direction: column;
+    justify-content: end;
 }
 
 footer .logo a {
@@ -39,7 +40,7 @@ footer .logo a {
 
 footer li {
     font-size: .8em;
-    height: 44px;
+    min-height: 44px;
     align-items: center;
 }
 
@@ -68,8 +69,8 @@ width: 20px;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    justify-content: space-around;
-    gap: 1.2em;
+    justify-content: flex-end;
+    gap: 4em;
 }
 
 .hours {
@@ -102,7 +103,7 @@ width: 20px;
 }
 
 .footer-nav nav {
-    padding-left: 1em;
+
 }
 
 @media screen and (max-width: 360px) {

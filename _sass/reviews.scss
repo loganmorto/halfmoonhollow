@@ -82,8 +82,224 @@
     opacity: 1;
   }
   
+
+  .review-profile-pic img {
+    max-width: 48px;
+  }
+  .google-reviews-section {
+    padding: 2rem;
+    background-color: #f9f9f9;
+    overflow-x: auto;
+    width: calc(100vw - 2em);
+    box-sizing: border-box;
+  }
+  
+  .google-reviews-carousel {
+    display: flex;
+    gap: 1.5rem;
+    scroll-snap-type: x mandatory;
+    overflow-x: auto;
+    padding-bottom: 1rem;
+    box-sizing: border-box;
+
+  }
+  
+  .google-review-card {
+    flex: 0 0 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+
+    border-radius: 10px;
+    color: white;
+    
+    position: relative;
+    scroll-snap-align: start;
+  }
+  
+  .review-card-top {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: #1a1a1a;
+    gap: 0.25rem;
+    padding: 1.5rem;
+  }
+
+
+  
+  .review-stars {
+    color: #fbbc04;
+    font-size: 1.25rem;
+  }
+  
+  .long-review-content {
+    font-size: 1rem;
+    line-height: 1.4;
+
+  }
+  
+  .review-snippet {
+    display: -webkit-box;
+    -webkit-line-clamp: 4; /* Number of lines to show */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0;
+    min-height: 5.6em; /* Ensures consistent height (line-height × lines shown) */
+  }
+  
+  
+  .read-more {
+    display: inline-block;
+    margin-top: 0.4rem;
+    font-weight: 500;
+    color: #4285f4;
+    text-decoration: none;
+  }
+  
+  .read-more:hover {
+    text-decoration: underline;
+  }
+  
+  .review-google-logo {
+    margin-top: .5rem;
+  }
+  
+  .review-google-logo img {
+    width: 24px;
+    height: auto;
+  }
+  
+  /* Speech bubble tail */
+  .review-card-top::after {
+    content: "";
+    position: absolute;
+    bottom: -12px;
+    left: 40px;
+    width: 0;
+    height: 0;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-top: 12px solid #1a1a1a;
+  }
+  
+  .review-card-bottom {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+  
+  .review-profile-pic img {
+    width: 44px;
+    height: 44px;
+    object-fit: cover;
+  }
+  
+  .review-profile-meta {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .review-name {
+    font-weight: bold;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+    color: $background-color;
+  }
+  
+  .verified-badge {
+    font-size: 1rem;
+    color: #1a73e8;
+  }
+  
+  .review-date {
+    font-size: 0.875rem;
+    color: #ccc;
+  }
+  
+  .review-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    z-index: 1000;
+  }
+  
+  .review-modal.visible {
+    display: block;
+  }
+  
+  .modal-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+  }
+  
+  .modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 90%;
+    max-width: 600px;
+    background: white;
+    padding: 2rem;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    color: #111;
+    max-height: 80vh;
+    overflow-y: auto;
+  }
+  
+  .modal-close {
+    position: absolute;
+    top: 0.5rem;
+    right: 1rem;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: #666;
+    cursor: pointer;
+  }
+  
+  .modal-stars {
+    color: #fbbc04;
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+  }
+  
+  .modal-text {
+    font-size: 1rem;
+    line-height: 1.6;
+    white-space: pre-wrap;
+  }
+  
+
   @media (min-width: 968px) {
     .icons > p {
       display: flex;
+    }
+
+    .google-reviews-section {
+      width: 100%;
+    }
+    .google-review-card {
+      flex: 0 0 30%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      
+      border-radius: 10px;
+      color: white;
+      
+      position: relative;
+      scroll-snap-align: start;
     }
   }

@@ -1,0 +1,53 @@
+<section class="google-reviews-section">
+  <div class="google-reviews-carousel">
+
+    {% for review in site.data.google-reviews %}
+      <div class="google-review-card" data-rating="{{ review.rating }}">
+
+        <div class="review-card-top">
+          <div class="review-stars">
+            {% for i in (1..review.rating) %}
+              <span class="star">★</span>
+            {% endfor %}
+          </div>
+          <div class="long-review-content" data-fulltext="{{ review.content | escape }}">
+            <p class="review-snippet">
+              {{ review.content }}
+            </p>
+            <a href="#" class="read-more">Read more</a>
+          </div>
+
+          <div class="review-google-logo">
+            <img src={{ "/assets/images/logos/google-icon-logo.webp" | relative_url}} alt="Google Logo" />
+          </div>
+        </div>
+
+        <div class="review-card-bottom">
+          <div class="review-profile-pic">
+            <img src="{{ review.profile_photo | relative_url }}" alt="{{ review.name }}" />
+          </div>
+          <div class="review-profile-meta">
+            <div class="review-name">
+              {{ review.name }}
+              {% if review.local_guide %}
+                <span class="verified-badge">✔️</span>
+              {% endif %}
+            </div>
+            <div class="review-date">
+              {{ review.date | date_to_relative }}
+            </div>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+  <div id="review-modal" class="review-modal">
+    <div class="modal-overlay"></div>
+    <div class="modal-content">
+      <button class="modal-close">&times;</button>
+      <div class="modal-stars" id="modal-stars"></div>
+      <p class="modal-text" id="modal-text"></p>
+    </div>
+  </div>
+
+</section>

@@ -168,16 +168,13 @@ gap: .5em;
   width: 24px;
  }
   
-}
-
-@media (min-width: 968px) {
-  .header-right .call-to-action {
+.header-right .call-to-action {
       display: flex;
       padding: .5em;
       margin: .75em;
   }
 
-  .head-contacts .call-to-action {
+.head-contacts .call-to-action {
       display: none;
   }
 

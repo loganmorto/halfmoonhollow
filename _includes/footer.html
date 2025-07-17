@@ -1,9 +1,6 @@
-<footer style="grid-column: 1 / 5; max-width: 1200px; margin: 0 auto;  padding-top: 1em;">
+<footer style="grid-column: 1 / 5; max-width: 1200px; margin: 0 auto;  padding-top: 3em;">
   <div class="footer-container">
     <div class="footer-nav">
-      <a class="logo" href="{{ '/' | relative_url }}">
-        <img src={{ "/assets/images/logoimg.svg" | relative_url }} alt="">
-      </a>
 
       {% include navigation.html %}
     </div>
@@ -36,7 +33,7 @@
   <div style="text-align: center; font-size:smaller;">
     <a href="{{  '/privacy-policy/' | relative_url }} ">Privacy Policy</a>
     <a href="{{'/cookies/' | relative_url}}">Cookies</a>
-    <p>Copyright © 2025 Western Carolina Waterscapes LLC  - All Rights Reserved.</p>
+    <p>Copyright © 2025 {{ site.title }} - All Rights Reserved.</p>
   </div>
   <script type="text/javascript" src={{ "/assets/js/lightbox.js" | relative_url }}></script>
 
