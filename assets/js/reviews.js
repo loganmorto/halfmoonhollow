@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
   document.querySelectorAll(".read-more").forEach(link => {
     link.addEventListener("click", e => {
       e.preventDefault();
-      const fullText = link.closest(".review-content").dataset.fulltext;
+      const fullText = link.closest(".long-review-content").dataset.fulltext;
       const rating = parseInt(link.closest(".google-review-card").dataset.rating, 10);
 
       modalText.textContent = fullText;

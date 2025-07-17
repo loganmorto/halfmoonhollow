@@ -94,7 +94,7 @@
     width: calc(100vw - 2em);
     max-width: 1200px;
     box-sizing: border-box;
-    margin: 0 auto;
+    margin: 1em auto;
   }
   
   .google-reviews-carousel {
@@ -106,8 +106,13 @@
     scrollbar-width: thin;         /* Firefox */
     scrollbar-color: #ccc transparent; /* Firefox */
     padding-bottom: 2rem;
+    padding-top: 1em;
     box-sizing: border-box;
+  }
 
+  .google-reviews-section > h2 , .google-reviews-section > p {
+    color: $background-color;
+    text-align: center;
   }
 
   
