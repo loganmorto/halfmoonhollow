@@ -6,12 +6,11 @@ layout: page
 
 <section class="service-detail">
   <img src="{{ service.image | relative_url }}" alt="">
-  <h1>{{ service.title }}</h1>
   <p>{{ service.description }}</p>
 
   {% if service.offerings %}
     <h3>What We Offer</h3>
-    <ul>
+    <ul class="offerings-list">
       {% for item in service.offerings %}
         <li>{{ item }}</li>
       {% endfor %}
@@ -29,4 +28,5 @@ layout: page
       {% endfor %}
     </ul>
   {% endif %}
+  {{ content }}
 </section>

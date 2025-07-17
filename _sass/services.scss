@@ -1,7 +1,7 @@
 .service {
 display: flex;
 flex-direction: column;
-
+line-height: 1.5em;
 padding: 1em 0;
 border-radius: $radius;
 }
@@ -13,24 +13,21 @@ border-radius: $radius;
 
 .services img {
     width: 100%;
-
     object-fit: cover;
-    
 }
 
 .service p {
     padding: 1em;
     padding-top: 0;
-
 }
 
-.service ul {
+.service ul, .offerings-list {
     padding-left: 1.8em;
     margin: 0;
     padding-right: 1em;
   }
   
-  .service li {
+.service li, .offerings-list li {
     text-decoration: underline;
     line-height: 1.8;
     padding-bottom: .5em;
@@ -46,6 +43,34 @@ border-radius: $radius;
     display: flex;
     flex-direction: column;
     padding-bottom: 1.2em;
+}
+
+.service-detail img {
+    max-height: 450px;
+    object-fit: cover;
+    border: 2px solid $foreground-color;
+}
+
+.service-detail > p {
+    line-height: 2.2rem;
+    text-align: center;
+    padding: 2rem;
+    max-width: 80ch;
+    margin: 0 auto;
+}
+
+.service-detail > h3 {
+    line-height: 2.2rem;
+    text-align: center;
+    margin: 1rem auto;
+}
+
+.offerings-list li {
+list-style: none;
+text-align: center;
+text-decoration: none;
+padding-bottom: 1.5rem;
+color: $primary-color;
 }
 
 

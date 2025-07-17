@@ -10,7 +10,7 @@
       card-image-link: "/assets/images/1.jpg"
     - name: "Home Remodel"
       link: "/services/home-remodel/"
-      card-image-link: "/assets/images/2.jpeg"
+      card-image-link: "/assets/images/2.jpg"
     - name: "Kitchen Remodel"
       link: "/services/kitchen-remodel/"
       card-image-link: "/assets/images/3.jpg"
