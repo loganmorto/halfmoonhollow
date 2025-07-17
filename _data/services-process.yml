@@ -1,0 +1,38 @@
+new-construction:
+  title: Our New Construction Process
+  image: /assets/images/13.jpg
+  steps:
+    - heading: Initial Consultation
+      text: We’ll meet to discuss your vision, timeline, and budget to make sure we’re aligned from the start.
+    - heading: Planning & Permits
+      text: Our team handles all permitting and coordinates schedules and materials so everything is ready to go.
+    - heading: Construction
+      text: From foundation to finishes, we build with precision and craftsmanship, keeping you updated at every step.
+    - heading: Final Walkthrough
+      text: After construction is complete, we conduct a detailed walkthrough and handle final touch-ups to ensure your complete satisfaction.
+
+home-remodel:
+  title: Our Home Remodel Process
+  image: /assets/images/9.jpg
+  steps:
+    - heading: Design Consultation
+      text: We explore your goals for the remodel and assess the space to craft a tailored plan.
+    - heading: Scope & Estimate
+      text: After confirming the vision, we provide a detailed estimate including timelines and materials.
+    - heading: Renovation
+      text: We complete the remodel efficiently while respecting your home and schedule.
+    - heading: Finishing Touches
+      text: Final details like paint, trim, and cleanup are completed to ensure the space feels fresh and cohesive.
+
+kitchen-remodel:
+  title: Our Kitchen Romodel Process
+  image: /assets/images/12.jpg
+  steps:
+    - heading: Vision & Layout
+      text: We work with you to understand your goals and design an optimized layout that meets your needs.
+    - heading: Materials & Fixtures
+      text: Choose cabinetry, counters, appliances, and finishes that align with your style and budget.
+    - heading: Installation
+      text: Our team handles everything from demo to build-out, keeping the process smooth and on schedule.
+    - heading: Final Details
+      text: Once installed, we perform finishing touches and a final inspection to ensure everything is just right.

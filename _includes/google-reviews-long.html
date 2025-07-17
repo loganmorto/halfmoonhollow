@@ -8,7 +8,10 @@
         <div class="review-card-top">
           <div class="review-stars">
             {% for i in (1..review.rating) %}
-              <span class="star">★</span>
+              <img
+                class="star-icon"
+                src="{{ '/assets/images/star-icon.svg' | relative_url }}"
+                alt="star icon" />
             {% endfor %}
           </div>
           <div class="long-review-content" data-fulltext="{{ review.content | escape }}">
