@@ -29,9 +29,6 @@
           <div class="review-profile-meta">
             <div class="review-name">
               {{ review.name }}
-              {% if review.local_guide %}
-                <span class="verified-badge">✔️</span>
-              {% endif %}
             </div>
             <div class="review-date">
               {{ review.date | date_to_relative }}
@@ -41,6 +38,8 @@
       </div>
     {% endfor %}
   </div>
+  <div class="review-dots" id="review-dots"></div>
+
   <div id="review-modal" class="review-modal">
     <div class="modal-overlay"></div>
     <div class="modal-content">

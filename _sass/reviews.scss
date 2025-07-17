@@ -88,10 +88,13 @@
   }
   .google-reviews-section {
     padding: 2rem;
-    background-color: #f9f9f9;
+    padding-bottom: 1rem;
+    background-color: $foreground-color;
     overflow-x: auto;
     width: calc(100vw - 2em);
+    max-width: 1200px;
     box-sizing: border-box;
+    margin: 0 auto;
   }
   
   .google-reviews-carousel {
@@ -102,23 +105,11 @@
     -webkit-overflow-scrolling: touch;
     scrollbar-width: thin;         /* Firefox */
     scrollbar-color: #ccc transparent; /* Firefox */
-    padding-bottom: 1rem;
+    padding-bottom: 2rem;
     box-sizing: border-box;
 
   }
 
-  .google-reviews-carousel::-webkit-scrollbar {
-    height: 8px;
-  }
-  
-  .google-reviews-carousel::-webkit-scrollbar-track {
-    background: transparent;
-  }
-  
-  .google-reviews-carousel::-webkit-scrollbar-thumb {
-    background-color: #ccc;
-    border-radius: 4px;
-  }
   
   .google-review-card {
     flex: 0 0 100%;
@@ -144,7 +135,33 @@
   }
 
 
+  .review-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    height: 14px;
+    position: relative;
+    bottom: 14px;
+    background-color: $foreground-color;
+  }
   
+  .review-dot {
+    width: 8px;
+    height: 8px;
+    background-color: #ccc;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+  }
+  
+  .review-dot.active {
+    width: 12px;
+    height: 12px;
+    background-color: #4285f4;
+  }
+  
+
+
   .review-stars {
     color: #fbbc04;
     font-size: 1.25rem;
@@ -235,7 +252,7 @@
   
   .review-date {
     font-size: 0.875rem;
-    color: #ccc;
+    color: $background-color;
   }
   
   .review-modal {
@@ -304,7 +321,7 @@
     }
 
     .google-reviews-section {
-      width: 100%;
+
     }
     .google-review-card {
       flex: 0 0 30%;
