@@ -98,10 +98,26 @@
     display: flex;
     gap: 1.5rem;
     scroll-snap-type: x mandatory;
-    overflow-x: auto;
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;         /* Firefox */
+    scrollbar-color: #ccc transparent; /* Firefox */
     padding-bottom: 1rem;
     box-sizing: border-box;
 
+  }
+
+  .google-reviews-carousel::-webkit-scrollbar {
+    height: 8px;
+  }
+  
+  .google-reviews-carousel::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  .google-reviews-carousel::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 4px;
   }
   
   .google-review-card {
